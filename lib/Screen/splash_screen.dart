@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:pageview/Screen/home_page.dart';
 
-import '../sakil.dart';
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -15,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
 
   Future<void> goToScreen() async {
-    await Future.delayed(const Duration(seconds: 2)).then((value) =>  SwipePage().launch(context,isNewTask: true));
+    await Future.delayed(const Duration(seconds: 2)).then((value) =>  HomePage().launch(context,isNewTask: true));
   }
   @override
   void initState() {
